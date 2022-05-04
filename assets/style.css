@@ -1,0 +1,132 @@
+/* Quiz Styles */
+
+
+body {
+    background-color: rgb(220, 239, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.start-btn, .info-box, .quiz-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.start-btn button {
+    font-size: 27px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.info-box {
+    display: none;
+    width: 540px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.info-box .info-title {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 35px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.info-box .info-list {
+   padding: 15px 35px;
+
+}
+
+.info-box .info-list .info {
+    margin: 5px 0;
+    font-size: 17px;
+}
+
+.info-box .info-list .info span {
+    font-weight: 600;
+    color: red;
+}
+
+.info-box .buttons {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 35px;
+}
+
+.info-box .buttons button {
+   margin: 0 5px;
+   height: 40px;
+   width: 1--px;
+   background: red;
+   border-radius: 5px;
+   color: #fff;
+   font-size: 16px;
+   font-weight: 500;
+   cursor: pointer;
+}
+
+.buttons button.quit {
+    color: #fff;
+    border-color: black;
+}
+
+.buttons button.quit:hover {
+    background: rgb(133, 0, 0);
+}
+
+.buttons button.restart {
+    color: #fff;
+    border-color: black;
+    background: rgb(0, 183, 255);
+}
+
+.buttons button.restart:hover {
+    background: rgb(0, 89, 124);
+}
+
+.quiz-box {
+    width: 550px;
+    background: #fff;
+    border-radius: 5px;
+
+}
+
+.quiz-box header {
+    height: 70px;
+    padding: 0 35px;
+    background: rgb(253, 193, 193);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px 5px 0 0;
+}
+
+.quiz-box header .title {
+   font-size: 20px;
+   font-weight: 600;
+
+}
+
+.quiz-box header .timer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100px;
+    height: 45px;
+    background: aliceblue;
+    border: 1px dotted black;
+    border-radius: 5px;
+    padding: 0 8px;
+}
