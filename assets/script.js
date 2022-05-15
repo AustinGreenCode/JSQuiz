@@ -38,6 +38,7 @@ let widthValue = 0;
 const restart_quiz = result_box.querySelector(".buttons .restart");
 const quit_quiz = result_box.querySelector(".buttons .quit");
 
+// cant get this part to work, keeps saying its null
 
 restart_quiz.onclick = (restart_btn)=>{
     quiz_box.classList.add("activeQuiz");
@@ -191,5 +192,9 @@ function startTimerLine(time){
 function queCounter(index){
     
     let totalQueCounTag = '<span><p>'+ index +'</p> of <p>'+ questions.length +'</p> Questions</span>';
-    bottom_ques_counter.innerHTML = totalQueCounTag;  //adding new span tag inside bottom_ques_counter
-}}
+    bottom_ques_counter.innerHTML = totalQueCounTag;  }}
+
+
+    // source: https://www.youtube.com/watch?v=riDzcEQbX6k
+    // source: https://www.youtube.com/watch?v=pQr4O1OITJo
+    // source: https://www.youtube.com/watch?v=WUBhpSRS_fk&t=0s
